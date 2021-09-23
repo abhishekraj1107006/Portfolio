@@ -29,3 +29,40 @@ justify-content: space-between;
 p ,h2{
     text-align: center;
 }
+body{
+    background-color:#f3fc08 ;
+}
+a:link{
+    color:orange;
+}
+a:visited{
+    color:orangered;
+}
+.menu{
+    display:flex;
+    flex:25%;
+    justify-content: flex-end;
+    flex-direction: row;
+    margin-right: 30px;
+    margin-top: 10px;
+}
+.menu a{
+    margin-left: 30px;
+
+}
+.item{
+    position:relative;
+}
+.item p{
+    position:absolute;
+    top:50%;left:50%;
+
+    transform: translate(-50%,-50%);
+    opacity: 0;
+}
+.item:hover p{
+    opacity:1;
+}
+.item:hover img{
+    opacity:0.30;
+}
